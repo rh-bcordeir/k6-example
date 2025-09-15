@@ -8,11 +8,15 @@ O parâmetro --vus indica o número de virtual users simultâneos enviando requi
 
 ## Requisições GET
 
+```
 podman run --rm -it -v $(pwd):/src:Z -w /src grafana/k6 run --vus 5 --duration 3s get/script.js
+```
 
 ## Requisições POST
 
+```
 podman run --rm -it -v $(pwd):/src:Z -w /src grafana/k6 run --vus 5 --duration 3s post/script.js
+```
 
 ## Debug
 
